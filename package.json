@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "build:standalone": "npm run build && npx @vercel/ncc build dist/index.js -o standalone -m",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build",
