@@ -208,6 +208,10 @@ Contributions welcome! We're especially looking for:
 - Documentation platform integrations
 - Journey templates for common use cases
 
+### Development Setup
+
+Pre-commit hooks are automatically installed when you run `pnpm install`. These hooks run linting and formatting checks before each commit to ensure code quality. If you need to bypass them (not recommended), use `git commit --no-verify`.
+
 ## Why DocWorks?
 
 - **Real-world testing** - AI navigates docs like developers do
