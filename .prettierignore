@@ -4,3 +4,4 @@ build
 .next
 pnpm-lock.yaml
 *.tsbuildinfo
+*.md
