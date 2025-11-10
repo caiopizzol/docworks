@@ -1,5 +1,5 @@
 export interface DocWorksConfig {
-  source: string // URL (https://docs.site.com) or local path (./docs)
+  source: string // URL (https://docs.site.com/llms.txt) or local file path (./docs/llms.txt)
   threshold?: number // Global threshold (0-100), defaults to 100
   questions?: string[] // Standalone questions (treated as implicit "general" journey)
   journeys?: Record<string, JourneyConfig | string[]>
