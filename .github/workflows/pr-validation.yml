@@ -3,7 +3,7 @@ name: PR Validation
 on:
   workflow_dispatch:
   pull_request:
-    branches: [main, stable, "*.x"]
+    branches: [main, stable, '*.x']
 
 concurrency:
   group: pr-${{ github.event.pull_request.number }}
