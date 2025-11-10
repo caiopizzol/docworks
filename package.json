@@ -18,7 +18,8 @@
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "type-check": "tsc --noEmit",
-    "check:all": "pnpm run build && pnpm run format && pnpm run lint && pnpm run type-check"
+    "check:all": "pnpm run build && pnpm run format && pnpm run lint && pnpm run type-check",
+    "prepare": "husky"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.20.0",
@@ -42,7 +43,6 @@
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
-    "node": "link:@@types/node",
     "prettier": "^3.6.2",
     "semantic-release": "^24.2.7",
     "typescript": "^5.0.0",
