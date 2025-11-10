@@ -1,3 +1,17 @@
+# [0.17.0](https://github.com/caiopizzol/docworks/compare/v0.16.0...v0.17.0) (2025-11-10)
+
+
+### Bug Fixes
+
+* update pnpm-lock.yaml with commitlint packages and dependencies ([51c927c](https://github.com/caiopizzol/docworks/commit/51c927c34545f0db8c05754da4e9cfc4c6e95333))
+
+
+### Features
+
+* add configuration schema for DocWorks ([72e00b6](https://github.com/caiopizzol/docworks/commit/72e00b6d3e254e1c18d412154739bfaf5131f6de))
+* added file source support and standalone build option ([#5](https://github.com/caiopizzol/docworks/issues/5)) ([8e91fe2](https://github.com/caiopizzol/docworks/commit/8e91fe24cf04664ad700b448ef559d4a8aa87ab7))
+* begin next development cycle [skip ci] ([9610e58](https://github.com/caiopizzol/docworks/commit/9610e583f640be963e053236802da11a26cc093d))
+
 # [0.16.0](https://github.com/caiopizzol/docworks/compare/v0.15.0...v0.16.0) (2025-09-10)
 
 ### Features
