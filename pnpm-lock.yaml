@@ -72,9 +72,6 @@ importers:
       lint-staged:
         specifier: ^16.1.6
         version: 16.1.6
-      node:
-        specifier: link:@@types/node
-        version: link:@@types/node
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
