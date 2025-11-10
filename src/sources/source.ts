@@ -7,7 +7,7 @@ function isUrl(source: string): boolean {
     if (!source.includes('://')) {
       return false
     }
-    
+
     // Try to construct a URL object - will throw if invalid
     new URL(source)
     return true
@@ -16,22 +16,26 @@ function isUrl(source: string): boolean {
   }
 }
 
-async function readFromFile(filePath: string): Promise<{ content: string; name: string }> {
+async function readFromFile(
+  filePath: string
+): Promise<{ content: string; name: string }> {
   const resolvedPath = path.resolve(filePath)
-  
+
   if (!fs.existsSync(resolvedPath)) {
     throw new Error(`File not found: ${resolvedPath}`)
   }
-  
+
   console.log(`Reading ${resolvedPath}...`)
   const content = fs.readFileSync(resolvedPath, 'utf-8')
   const name = `${path.basename(resolvedPath)} from local file`
-  
+
   console.log('✓ Loaded documentation\n')
   return { content, name }
 }
 
-async function fetchFromUrl(url: string): Promise<{ content: string; name: string }> {
+async function fetchFromUrl(
+  url: string
+): Promise<{ content: string; name: string }> {
   // Try to fetch llms.txt
   const llmsTxtUrl = new URL('/llms.txt', url).href
 
