@@ -1,5 +1,32 @@
-<img width="150" height="62" alt="logo-light" src="https://github.com/user-attachments/assets/a538da6b-3443-45d3-bc25-1604ea3b31b1" />
-<br/><br/>
+# DocWorks
+
+> [!IMPORTANT]
+> DocWorks is deprecated. Use [Pickled](https://github.com/caiopizzol/pickled) instead.
+
+DocWorks was an early experiment around a useful question: can developers and AI agents actually accomplish tasks using your documentation?
+
+That question is still right. The implementation was too narrow. DocWorks checked one documentation source through one provider and reported confidence. Pickled replaces that with a broader contract:
+
+- matrix runs across interfaces, sources, and toolsets
+- support for Claude Code, Codex CLI, Anthropic API, and OpenAI API
+- `none`, `web`, and `mcp` tool paths
+- deterministic scoring with expected facts, declared traps, citations, and tool-use provenance
+- no LLM grades another LLM
+
+Toolset support varies by interface. `web` runs on Claude Code, the Anthropic API, and the OpenAI API. `mcp` runs on Claude Code and the OpenAI API. Codex CLI today runs the controlled `none` cells only.
+
+Use Pickled for new work:
+
+```bash
+bunx @pickled-dev/cli init
+bunx @pickled-dev/cli check .
+```
+
+Docs: [docs.pickled.dev](https://docs.pickled.dev)
+
+The old DocWorks README is kept below for historical context.
+
+---
 
 Ensure your docs work for developers and AI. Tests if humans and AI agents can actually accomplish tasks using your documentation.
 

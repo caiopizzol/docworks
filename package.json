@@ -1,7 +1,7 @@
 {
   "name": "docworks",
   "version": "0.17.0",
-  "description": "Ensure your docs work for developers and AI",
+  "description": "Deprecated. Use @pickled-dev/cli instead.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
